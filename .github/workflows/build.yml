@@ -27,17 +27,17 @@ jobs:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
 
-        - name: Install dependencies
-          if: steps.cache-pipenv.outputs.cache-hit != 'true'
-          run: |
-            pipenv install --deploy --dev
+      - name: Install dependencies
+        if: steps.cache-pipenv.outputs.cache-hit != 'true'
+        run: |
+          pipenv install --deploy --dev
 
-        - name: Build
-            run: |
-              python setup.py sdist bdist_wheel
+      - name: Build
+        run: |
+          python setup.py sdist bdist_wheel
 
-        - name: Publish a Python distribution to PyPI
-          uses: pypa/gh-action-pypi-publish@master
-          with:
-            user: __token__
-            password: ${{ secrets.pypi_password }}
+      - name: Publish a Python distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_password }}
