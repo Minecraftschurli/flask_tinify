@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="flask_tinify",
-    version="1.0",
+    version="1.1",
     description="An adaption of tinify as a flask extension",
     long_description=README,
     long_description_content_type="text/markdown",
