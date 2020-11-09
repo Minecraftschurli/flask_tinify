@@ -1,11 +1,11 @@
-# flask_tinify
+# flask_tinify ![Build](https://github.com/Minecraftschurli/flask_tinify/workflows/Build/badge.svg)
 An adaption of [tinify](https://github.com/tinify/tinify-python) as a flask extension
 
 ## Installation
 Install the API client:
 
 ```shell
-pip install tinify
+pip install flask-tinify
 ```
 
 ## Usage
