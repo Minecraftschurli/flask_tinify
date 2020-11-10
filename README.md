@@ -1,4 +1,4 @@
-# flask_tinify ![Build](https://github.com/Minecraftschurli/flask_tinify/workflows/Build/badge.svg)
+# flask_tinify [![Build](https://github.com/Minecraftschurli/flask_tinify/workflows/Build/badge.svg)](https://github.com/Minecraftschurli/flask_tinify/actions)
 An adaption of [tinify](https://github.com/tinify/tinify-python) as a flask extension
 
 ## Installation
