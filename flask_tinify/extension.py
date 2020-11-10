@@ -1,6 +1,8 @@
 import threading
 
-from . import AccountError, Client, ClientError, Source
+from flask_tinify.source import Source
+from flask_tinify.client import Client
+from flask_tinify.errors import AccountError, ClientError
 
 
 class Tinify(object):
