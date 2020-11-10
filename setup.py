@@ -1,6 +1,5 @@
 import pathlib
 from setuptools import setup
-from flask_tinify.version import __version__
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -11,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="flask_tinify",
-    version=__version__,
+    version='1.3',
     description="An adaption of tinify as a flask extension",
     long_description=README,
     long_description_content_type="text/markdown",
