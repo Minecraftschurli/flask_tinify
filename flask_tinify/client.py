@@ -8,7 +8,7 @@ import requests
 import requests.exceptions
 
 import json
-from . import __version__
+from .version import __version__
 from .errors import ConnectionError, Error
 
 

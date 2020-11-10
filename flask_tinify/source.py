@@ -1,4 +1,5 @@
-from . import Result, ResultMeta
+from .result import Result
+from .result_meta import ResultMeta
 
 
 class Source(object):
