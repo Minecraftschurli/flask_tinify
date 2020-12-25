@@ -49,7 +49,7 @@ class Client(object):
             params['data'] = body
 
         for retries in range(self.tinify.retry_count, -1, -1):
-            if retries < self.RETRY_COUNT:
+            if retries < self.tinify.retry_count:
                 time.sleep(self.tinify.retry_delay / 1000.0)
 
             try:
