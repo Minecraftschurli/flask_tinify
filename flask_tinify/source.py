@@ -9,10 +9,10 @@ class Source(object):
         self.tinify = tinify
 
     def preserve(self, *options):
-        return type(self)(self.url, **self._merge_commands(preserve=self._flatten(options)))
+        return type(self)(self.url, self.tinify, **self._merge_commands(preserve=self._flatten(options)))
 
     def resize(self, **options):
-        return type(self)(self.url, **self._merge_commands(resize=options))
+        return type(self)(self.url, self.tinify, **self._merge_commands(resize=options))
 
     def store(self, **options):
         response = self.tinify.get_client().request('POST', self.url, self._merge_commands(store=options))
