@@ -1,6 +1,6 @@
 import pathlib
 from setuptools import setup
-from flask_tinify import __version__
+from flask_tinify.version import __version__
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
