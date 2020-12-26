@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="flask_tinify",
-    version='1.5',
+    version='1.6',
     description="An adaption of tinify as a flask extension",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -30,6 +30,10 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     packages=["flask_tinify"],
+    package_data={
+        '': ['LICENSE', 'README.md'],
+        'flask_tinify': ['data/cacert.pem'],
+    },
     include_package_data=True,
     install_requires=["flask", "requests"],
 )
